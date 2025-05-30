@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title> Ensikopedia-Kesultanan Demak</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <style>
+    html { scroll-behavior: smooth; }
+    :root {
+      --warna-utama: #333446;
+      --warna-aksen: #ffffff;
+    }
+    .text-utama { color: var(--warna-utama); }
+    .text-aksen { color: var(--warna-aksen); }
+    .hover-aksen:hover { color: var(--warna-aksen); transition: 0.3s; }
+
+
+
+
+    .page-section { display: none; }
+    .page-section.active { display: block; }
+
+
+
+
+    /* Tooltip untuk scrollTop */
+    #scrollTop::after {
+      content: attr(title);
+      position: absolute;
+      bottom: 125%;
+      right: 0;
+      background-color: #333;
+      color: #fff;
+      padding: 4px 8px;
+      font-size: 0.75rem;
+      white-space: nowrap;
+      border-radius: 0.25rem;
+      opacity: 0;
+      transition: opacity 0.3s;
+      pointer-events: none;
+    }
+
+    #scrollTop:hover::after {
+      opacity: 1;
+    }
+  </style>
+
+  <!-- Lightbox CSS -->
+<link href="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/css/lightbox.min.css" rel="stylesheet">
+
+<!-- Lightbox JS -->
+<script src="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/js/lightbox.min.js"></script>
+
+</head>
+<body class="bg-gradient-to-br from-[#EAEFEF] to-[#EAEFEF] text-gray-800">
+
+
+
+
+  <!-- Navbar -->
+  <nav class="bg-gradient-to-r from-[#355C7D] to-[#F67280] text-white p-4 sticky top-0 z-50 shadow-md">
+    <div class="container mx-auto flex justify-between items-center">
+      <h1 class="text-xl font-bold text-aksen">Ensiklopedia Kesultanan Demak</h1>
+      <div class="space-x-4 text-sm sm:text-base">
+        <a href="#beranda" class="hover-aksen nav-link">Beranda</a>
+        <a href="#sejarah" class="hover-aksen nav-link">Sejarah</a>
+        <a href="#biografi" class="hover-aksen nav-link">Biografi</a>
+        <a href="#peran" class="hover-aksen nav-link">Peran Islam</a>
+        <a href="#galeri" class="hover-aksen nav-link">Galeri</a>
+        <a href="#profil" class="hover-aksen nav-link">Profil</a>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- Beranda -->
+<section id="beranda" data-page="beranda" class="page-section active container mx-auto px-4 py-16 text-center" data-aos="fade-up">
+  <h2 class="text-4xl font-bold mb-4 text-utama">
+    <span id="typing" class="border-r-2 border-green-900 pr-1"></span>
+  </h2>
+  <div class="backdrop-blur-md bg-white border-white rounded-xl shadow-lg p-6 max-w-2xl mx-auto text-lg text-gray-800">
+    <p>
+      Website ini menyajikan informasi lengkap tentang Kesultanan Demak, termasuk sejarah, tokoh penting, peran Islam, dan dokumentasi visual untuk memperkaya pengetahuan Anda mengenai kerajaan Islam pertama di tanah Jawa.
+    </p>
+
+  </div>
+  <div class="mt-10 max-w-3xl mx-auto" data-aos="fade-up">
+    <h3 class="text-2xl font-semibold text-utama mb-6 text-center">Timeline Kesultanan Demak</h3>
+    <div class="relative">
+      <div class="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-gray-300"></div>
+
+
+      <div class="space-y-20">
+        <div class="flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-6">
+          <div class="flex justify-end w-full md:w-1/2 pr-6">
+            <div class="bg-white shadow-lg rounded-2xl p-6 w-full max-w-md border border-gray-200" data-aos="fade-right">
+              <h3 class="text-xl font-bold text-utama mb-1">Pendirian Kesultanan</h3>
+              <p class="text-sm text-gray-500 mb-2">🗓️ Tahun: 1475 | 📍 Demak, Jawa Tengah</p>
+              <p class="text-gray-700 mb-4">
+                <span class="short-text">Kesultanan Demak diawali karena kerajaan Majapahit runtuh, serta banyak dari adipati yang berada di pesisir pantai utara pulau Jawa mulai melepaskan diri...</span>
+                <span class="full-text hidden"> Kesultanan Demak diawali karena kerajaan Majapahit runtuh, serta banyak dari adipati yang berada di pesisir pantai utara pulau Jawa mulai melepaskan diri, lalu disaat itulah mereka yang sudah berpecah berkeinginan kuat untuk menyebarkan agama Islam di daerah Jawa lalu didirikan lah salah satu kerajaan bernama Demak didirikan sekitar tahun 1478 oleh Raden Patah, seorang yang diyakini merupakan keturunan bangsawan dari kerajaan Majapahit dan telah memeluk agama Islam. Raden Patah pun mendirikan kerajaan Demak.</span>
+              </p>
+             <button onclick="toggleReadMore(this)" class="toggle-btn inline-flex items-center gap-2 bg-utama text-black px-4 py-2 rounded-full text-sm font-medium hover:bg-utama/80 transition duration-300">
+              <span class="btn-text">Lihat Detail</span>
+              <svg class="icon-arrow w-4 h-4 transform transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+              </svg>
+             </button>
+
+            </div>
+          </div>
+
+
+          <div class="w-6 h-6 bg-yellow-500 border-4 border-white rounded-full z-10 shadow-md mx-auto md:mx-0"></div>
+
+
+          <div class="w-full md:w-1/2 pl-6 flex justify-start"></div>
+        </div>
+
+
+        <div class="flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-6">
+          <div class="w-full md:w-1/2 pr-6 flex justify-end"></div>
+
+
+          <div class="w-6 h-6 bg-green-500 border-4 border-white rounded-full z-10 shadow-md mx-auto md:mx-0"></div>
+
+
+          <div class="w-full md:w-1/2 pl-6 flex justify-start">
+            <div class="bg-white shadow-lg rounded-2xl p-6 w-full max-w-md border border-gray-200" data-aos="fade-left">
+              <h3 class="text-xl font-bold text-utama mb-1">Masa Kejayaan</h3>
+              <p class="text-sm text-gray-500 mb-2">🗓️ 1518–1546 | 📍 Pulau Jawa</p>
+              <p class="text-gray-700 mb-4">
+                <span class="short-text">Demak jadi memiliki kekuasaan wilayah yang luas dari Jawa Barat ke Jawa Timur, Sultan Trenggana melakukan penyerangan terhadap daerah Sunda Kelapa (Pajajaran) dan Blambangan...</span>
+                <span class="full-text hidden">Demak jadi memiliki kekuasaan wilayah yang luas dari Jawa Barat ke Jawa Timur, Sultan Trenggana melakukan penyerangan terhadap daerah Sunda Kelapa (Pajajaran) dan Blambangan. Penyerangan terhadap Sunda Kelapa disebabkan oleh perjanjian Raja Pakuan dan Portugis yang ditandai dengan Tugu Padrao. Pada tahun 1526, Demak mengirimkan pasukan untuk menyerang Sunda Kelapa. Kemenangan diraih pada tanggal 22 Juni 1527. Nama Sunda Kelapa diganti menjadi Jayakarta yang berarti kemenangan abadi, dan di masa inilah puncak kejayaan Kerajaan Demak dimulai dari ekonomi yang berkembang pesat serta perluasan daerah yang sangat cepat.</span>
+              </p>
+             <button onclick="toggleReadMore(this)" class="toggle-btn inline-flex items-center gap-2 bg-utama text-black px-4 py-2 rounded-full text-sm font-medium hover:bg-utama/80 transition duration-300">
+              <span class="btn-text">Lihat Detail</span>
+              <svg class="icon-arrow w-4 h-4 transform transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+              </svg>
+             </button>
+
+            </div>
+          </div>
+        </div>
+
+
+        <div class="flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-6">
+          <div class="flex justify-end w-full md:w-1/2 pr-6">
+            <div class="bg-white shadow-lg rounded-2xl p-6 w-full max-w-md border border-gray-200" data-aos="fade-right">
+              <h3 class="text-xl font-bold text-utama mb-1">Penaklukan Sunda Kelapa</h3>
+              <p class="text-sm text-gray-500 mb-2">🗓️ 1527 | 📍 Sunda Kelapa</p>
+              <p class="text-gray-700 mb-4">
+                <span class="short-text">Fatahillah mengusir Portugis dari Sunda Kelapa dan menggantinya menjadi Jayakarta...</span>
+                <span class="full-text hidden">Fatahillah mengusir Portugis dari Sunda Kelapa dan menggantinya menjadi Jayakarta. Peristiwa ini merupakan salah satu keberhasilan terbesar Demak dalam mengamankan jalur perdagangan maritim dan menyebarkan pengaruh Islam di wilayah Jawa Barat.</span>
+              </p>
+             <button onclick="toggleReadMore(this)" class="toggle-btn inline-flex items-center gap-2 bg-utama text-black px-4 py-2 rounded-full text-sm font-medium hover:bg-utama/80 transition duration-300">
+              <span class="btn-text">Lihat Detail</span>
+              <svg class="icon-arrow w-4 h-4 transform transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+              </svg>
+             </button>
+
+            </div>
+          </div>
+
+          <div class="w-6 h-6 bg-blue-500 border-4 border-white rounded-full z-10 shadow-md mx-auto md:mx-0"></div>
+
+          <div class="w-full md:w-1/2 pl-6 flex justify-start"></div>
+        </div>
+
+        <div class="flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-6">
+          <div class="w-full md:w-1/2 pr-6 flex justify-end"></div>
+
+          <div class="w-6 h-6 bg-red-500 border-4 border-white rounded-full z-10 shadow-md mx-auto md:mx-0"></div>
+
+          <div class="w-full md:w-1/2 pl-6 flex justify-start">
+            <div class="bg-white shadow-lg rounded-2xl p-6 w-full max-w-md border border-gray-200" data-aos="fade-left">
+              <h3 class="text-xl font-bold text-utama mb-1">Wafatnya Trenggana</h3>
+              <p class="text-sm text-gray-500 mb-2">🗓️ 1546 | 📍 Panarukan</p>
+              <p class="text-gray-700 mb-4">
+                <span class="short-text">Trenggana gugur saat menyerang Blambangan, menyebabkan krisis suksesi di Demak...</span>
+                <span class="full-text hidden">Trenggana gugur saat menyerang Blambangan, menyebabkan krisis suksesi di Demak. Kematiannya menandai awal kemunduran Kesultanan Demak dan memicu perebutan kekuasaan di antara para pewarisnya.</span>
+              </p>
+           <button onclick="toggleReadMore(this)" class="toggle-btn inline-flex items-center gap-2 bg-utama text-black px-4 py-2 rounded-full text-sm font-medium hover:bg-utama/80 transition duration-300">
+            <span class="btn-text">Lihat Detail</span>
+            <svg class="icon-arrow w-4 h-4 transform transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+            </svg>
+           </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <footer class="section-footer"><b><i>Sumber Referensi </i></b>| <a href="https://www.detik.com/jateng/budaya/d-6084921/kerajaan-demak-sejarah-raja-raja-masa-kejayaan-dan-keruntuhannya/amp"><u><i>Klik di sini</i></u> + Buku Cetak IPS Sejarah SMA/MA/SMK/MAK Kelas X Kurikulum Merdeka</a></footer>
+</section>
+
+<script>
+  function toggleReadMore(button) {
+    const parentParagraph = button.previousElementSibling;
+    const shortText = parentParagraph.querySelector('.short-text');
+    const fullText = parentParagraph.querySelector('.full-text');
+    const icon = button.querySelector('.icon-arrow');
+    const btnText = button.querySelector('.btn-text');
+
+    const isHidden = fullText.classList.contains('hidden');
+
+    // Toggle isi
+    shortText.classList.toggle('hidden');
+    fullText.classList.toggle('hidden');
+
+    // Ganti teks tombol dan rotasi ikon
+    if (isHidden) {
+      btnText.textContent = 'Sembunyikan';
+      icon.classList.add('rotate-90');
+    } else {
+      btnText.textContent = 'Lihat Detail';
+      icon.classList.remove('rotate-90');
+    }
+  }
+</script>
+
+
+
+<!-- Sejarah -->
+<section id="sejarah" data-page="sejarah" class="page-section container mx-auto px-4 py-20" data-aos="fade-right">
+  <h2 class="text-4xl font-bold text-utama mb-12 text-center tracking-wide uppercase">
+    - Sejarah Kesultanan Demak -
+  </h2>
+
+<!-- Galeri Geser dengan Tombol -->
+<div class="relative w-full max-w-4xl mx-auto mb-14">
+
+  <!-- Tombol kiri -->
+  <button onclick="scrollCarousel(-1)" class="absolute left-0 top-1/2 -translate-y-1/2 bg-white shadow p-2 rounded-full z-10 hover:bg-gray-100">
+    <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+    </svg>
+  </button>
+
+  <!-- Carousel Container -->
+  <div id="carousel" class="flex overflow-x-auto gap-4 scroll-smooth snap-x snap-mandatory px-10">
+    <!-- Gambar 1 -->
+    <div class="min-w-[250px] snap-center flex-shrink-0">
+      <img src="https://ganaislamika.com/wp-content/uploads/2019/08/maxresdefault-1-1024x576.jpg"
+           alt="Raden Patah"
+           class="rounded-lg shadow-md w-full h-48 object-cover" />
+    </div>
+    <!-- Gambar 2 -->
+    <div class="min-w-[250px] snap-center flex-shrink-0">
+      <img src="https://www.pengetahuan.id/wp-content/uploads/2025/04/5f68bdd3010c9-780x470.jpg"
+           alt="Pati Unus"
+           class="rounded-lg shadow-md w-full h-48 object-cover" />
+    </div>
+    <!-- Gambar 3 -->
+    <div class="min-w-[250px] snap-center flex-shrink-0">
+      <img src="https://pict.sindonews.net/dyn/850/pena/news/2022/10/30/29/926895/kisah-keruntuhan-kerajaan-demak-dipicu-dendam-perebutan-kekuasaan-dan-saling-bunuh-mxt.jpg"
+           alt="Sultan Trenggono"
+           class="rounded-lg shadow-md w-full h-48 object-cover" />
+    </div>
+  </div>
+  
+
+  <!-- Tombol kanan -->
+  <button onclick="scrollCarousel(1)" class="absolute right-0 top-1/2 -translate-y-1/2 bg-white shadow p-2 rounded-full z-10 hover:bg-gray-100">
+    <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+    </svg>
+  </button>
+</div>
+
+<!-- Script Carousel -->
+<script>
+  function scrollCarousel(direction) {
+    const carousel = document.getElementById("carousel");
+    const scrollAmount = 260; // Adjust if needed
+    carousel.scrollBy({
+      left: direction * scrollAmount,
+      behavior: "smooth",
+    });
+  }
+</script>
+
+
+
+  <div class="text-gray-800 space-y-14 max-w-4xl mx-auto px-6 py-10 bg-white rounded-2xl shadow-lg">
+
+    <div data-aos="fade-right" data-aos-delay="100">
+      <h1 class="text-3xl font-semibold text-left mb-6">Kehidupan Politik</h1>
+
+      <!-- Paragraf 1 -->
+      <p class="text-lg sm:text-xl leading-relaxed text-justify border-y border-black/30 py-6 transition-all duration-300 hover:scale-[1.01]">
+        Kesultanan Demak atau Kerajaan Demak adalah kerajaan Islam pertama di Jawa yang berdiri pada perempat akhir abad ke-15 di Demak. Demak sebelumnya merupakan Kadipaten Majapahit yang telah melemah saat itu untuk beberapa tahun sebelum melepaskan diri. Berdasarkan sumber sejarah kerajaan ini didirikan oleh Raden Patah, yang merupakan keluarga dinasti Majapahit.
+      </p>
+
+      <!-- Paragraf 2 -->
+      <p class="text-lg sm:text-xl leading-relaxed text-justify border-y border-black/30 py-6 mt-6 transition-all duration-300 hover:scale-[1.01]">
+        Demak memainkan peran penting dalam mengakhiri kekuasaan Majapahit dan penyebaran Islam di Jawa. Sepanjang awal hingga pertengahan abad ke-16, Demak berada pada puncak kejayaannya di bawah pemerintahan Trenggono. Ia melakukan penaklukkan ke pelabuhan-pelabuhan utama di Pulau Jawa hingga ke pedalaman. Salah satu pelabuhan yang ditaklukkan adalah Sunda Kelapa, yang saat itu dikuasai oleh Kerajaan Sunda dan bersekutu dengan Portugis. Pada 1527, pasukan Demak dan Cirebon yang dipimpin Fatahillah berhasil mengusir Portugis dan mengganti nama pelabuhan tersebut menjadi Jayakarta.
+      </p>
+
+      <!-- Paragraf 3 -->
+      <p class="text-lg sm:text-xl leading-relaxed text-justify border-y border-black/30 py-6 mt-6 transition-all duration-300 hover:scale-[1.01]">
+        Kerajaan mulai mengalami kemunduran ketika Trenggono terbunuh dalam perang melawan Panarukan pada 1546. Sunan Prawoto kemudian naik takhta, namun dibunuh pada 1547 oleh suruhan Arya Panangsang. Konflik ini berakhir setelah Arya Panangsang dibunuh oleh Jaka Tingkir, yang kemudian memindahkan kekuasaan Demak ke Pajang. Dengan demikian, Kesultanan Demak digantikan oleh Kesultanan Pajang.
+      </p>
+    </div>
+  </div>
+<br>
+
+
+<div class="text-gray-800 space-y-14 max-w-4xl mx-auto px-6 py-10 bg-white rounded-2xl shadow-lg">
+
+    <!-- Kehidupan Ekonomi -->
+    <div data-aos="fade-right" data-aos-delay="100">
+      <h1 class="text-3xl font-semibold text-left mb-6">Kehidupan Ekonomi</h1>
+
+      <!-- Paragraf 1 -->
+      <p class="text-lg sm:text-xl leading-relaxed text-justify border-y border-black/30 py-6 transition-all duration-300 hover:scale-[1.01]">
+        Ekonomi Kesultanan Demak bertumpu pada perdagangan maritim dan pertanian. Letaknya yang strategis di pesisir utara Jawa membuatnya terlibat aktif dalam perdagangan internasional, menjadikan Demak sebagai pusat ekonomi yang penting pada masanya.
+      </p>
+
+      <!-- Paragraf 2 -->
+      <p class="text-lg sm:text-xl leading-relaxed text-justify border-y border-black/30 py-6 mt-6 transition-all duration-300 hover:scale-[1.01]">
+      <strong> Pertanian:</strong>
+        Pertanian menjadi sumber penghasilan penting bagi masyarakat Demak, dengan hasil beras dan madu yang bahkan diekspor. 
+      <br>
+      <br>
+      <strong>Perdagangan:</strong>
+      Kerajaan Demak sangat aktif dalam perdagangan laut, menguasai banyak pelabuhan utama di Jawa. Komoditas utama yang diperdagangkan adalah beras, rempah-rempah, dan buah-buahan.
+      <!-- Paragraf 3 -->
+      <p class="text-lg sm:text-xl leading-relaxed text-justify border-y border-black/30 py-6 mt-6 transition-all duration-300 hover:scale-[1.01]">
+        Perekonomian Kerajaan Demak pada masa kejayaan didominasi oleh sektor pertanian dan perdagangan, dengan perdagangan maritim sebagai sumber pendapatan utama. Letak strategis Kerajaan Demak di pesisir utara Jawa memungkinkan mereka untuk terlibat dalam perdagangan internasional yang menguntungkan.
+      </p>
+    </div>
+
+
+    <!-- Gambar Ilustrasi -->
+  <div class="flex justify-center" data-aos="zoom-in" data-aos-delay="200">
+  <img src="https://moondoggiesmusic.com/wp-content/uploads/2019/02/Kehidupan-Ekonomi-Kerajaan-Demak.jpg"
+       alt="Ilustrasi Sejarah Kesultanan Demak"
+       class="rounded-xl shadow-xl max-w-md w-full h-auto transition-transform duration-300 hover:scale-105" />
+    </div>
+   </div>
+ 
+<br>
+
+
+<div class="text-gray-800 space-y-14 max-w-4xl mx-auto px-6 py-10 bg-white rounded-2xl shadow-lg">
+
+    <!-- Kehidupan Sosial -->
+<div class="max-w-3xl mx-auto text-center text-gray-800 space-y-10" data-aos="fade-right" data-aos-delay="100">
+  <h1 class="text-3xl font-semibold text-left">Kehidupan Sosial</h1>
+
+  <!-- Paragraf 1 -->
+  <p class="text-lg sm:text-xl leading-relaxed text-justify border-y border-black/30 py-6 transition-all duration-300 hover:scale-[1.01]">
+    Kehidupan sosial di Kerajaan Demak merupakan perpaduan antara ajaran Islam dengan tradisi lama Hindu-Buddha. Masyarakatnya diatur berdasarkan ajaran Islam, tetapi masih banyak yang menjalankan tradisi lama. Kerajaan Demak juga dikenal sebagai pusat penyebaran Islam di Jawa dan di luar Pulau Jawa.
+ <br>
+
+  <!-- Paragraf 2 -->
+  <p class="text-lg sm:text-xl leading-relaxed text-justify border-y border-black/30 py-6 transition-all duration-300 hover:scale-[1.01]">
+    Kehidupan sosial di Kerajaan Demak mencerminkan perpaduan antara ajaran Islam yang mulai dianut dan tradisi lama yang masih dipegang teguh oleh masyarakat.
+  <br> 
+  Kerajaan Demak menjadi pusat penyebaran Islam di Jawa, dengan para wali memainkan peran penting dalam penyebaran ajaran Islam. Para wali tidak hanya menyebarkan Islam di Jawa, tetapi juga di luar pulau tersebut.
+  </p>
+  
+  
+  <!-- Gambar Ilustrasi -->
+<div class="flex justify-center" data-aos="zoom-in" data-aos-delay="200">
+  <img src="https://moondoggiesmusic.com/wp-content/uploads/2019/02/Perkembangan-Islam-Pada-Masa-Kerajaan-Demak.jpg"
+       alt="Ilustrasi Sejarah Kesultanan Demak"
+       class="rounded-xl shadow-xl max-w-md w-full h-auto transition-transform duration-300 hover:scale-105" />
+</div>
+  </div>
+</div>
+<br><br>
+
+
+<div class="text-gray-800 space-y-14 max-w-4xl mx-auto px-6 py-10 bg-white rounded-2xl shadow-lg">
+
+<!-- Kemunduran -->
+<div class="max-w-3xl mx-auto text-center text-gray-800 space-y-10" data-aos="fade-right" data-aos-delay="100">
+  <h1 class="text-3xl font-semibold text-left">Kemunduran</h1>
+
+  <!-- Paragraf 1 -->
+  <p class="text-lg sm:text-xl leading-relaxed text-justify border-y border-black/30 py-6 transition-all duration-300 hover:scale-[1.01]">
+   Sebagai kerajaan Islam pertama di Pulau Jawa, pernah mengalami masa kejayaan di bawah kepemimpinan tokoh-tokoh besar seperti Raden Patah dan Sultan Trenggana. Namun, setelah mencapai puncak kekuasaan, kerajaan ini perlahan mengalami kemunduran dan akhirnya runtuh. Berikut adalah beberapa faktor utama yang menyebabkan keruntuhan Kerajaan Demak:
+  </p>
+
+  <!-- Paragraf 2 -->
+  <p class="text-lg sm:text-xl leading-relaxed text-justify border-y border-black/30 py-6 transition-all duration-300 hover:scale-[1.01]">
+    <strong> 1. Perang Antar Saudara </strong>
+    <br><br>
+    Salah satu penyebab utama kehancuran Kerajaan Demak adalah konflik internal berupa perang antar saudara. Persaingan sengit terjadi antara Pangeran Surowiyoto (Sekar Seda Lepen) dan Raden Trenggana, dua putra dari Raden Patah. Setelah Raden Patah wafat, keduanya bersaing memperebutkan takhta. Meskipun akhirnya Raden Trenggana berhasil naik tahta, konflik tidak berhenti di situ.
+    Ketika kekuasaan berpindah ke tangan putra Trenggana, yaitu Sunan Prawoto, ketegangan kembali muncul. Sunan Prawoto membunuh Sekar Seda Lepen yang dianggap sebagai ancaman. Tindakan ini memicu dendam dari Arya Penangsang, putra Seda Lepen, yang kemudian membunuh Sunan Prawoto dan menguasai takhta. Aksi balas dendam ini memperburuk situasi politik dan memecah belah para adipati di bawah kekuasaan Demak.
+  </p>
+
+   <!-- Gambar Ilustrasi -->
+<div class="flex justify-center" data-aos="zoom-in" data-aos-delay="200">
+  <img src="https://1.bp.blogspot.com/-QRufCRq-Sds/YPJfEzznkuI/AAAAAAAACJc/etwxEsZMoaISVtnDoxYCAAPZ_DUCrafcwCLcBGAsYHQ/s512/unnamed.jpg"
+       alt="Ilustrasi Sejarah Kesultanan Demak"
+       class="rounded-xl shadow-xl max-w-md w-full h-auto transition-transform duration-300 hover:scale-105" />
+</div>
+  </div>
+<br>
+
+ <!-- Paragraf 2 -->
+<div class="max-w-3xl mx-auto" data-aos="fade-right" data-aos-delay="100">
+  <p class="text-lg sm:text-xl leading-relaxed text-justify border-y border-black/30 py-6 transition-all duration-300 hover:scale-[1.01]">
+    <strong>2. Sengketa Keluarga yang Rumit</strong>
+    <br><br>
+    Selain konflik kekuasaan, sengketa dalam keluarga kerajaan turut menjadi penyebab keruntuhan Demak. Raden Patah memiliki banyak anak dari istri yang berbeda, menyebabkan klaim atas takhta menjadi rumit. Sekar Seda Lepen adalah anak tertua namun berasal dari istri ketiga, sementara Raden Trenggana adalah anak dari istri pertama. Perbedaan status ibu ini menimbulkan perdebatan panjang mengenai siapa yang lebih berhak memimpin, menciptakan friksi internal yang merusak stabilitas kerajaan.
+  </p>
+</div>
+
+<!-- Gambar Ilustrasi -->
+<div class="flex justify-center mt-6" data-aos="zoom-in" data-aos-delay="200">
+  <img src="https://moondoggiesmusic.com/wp-content/uploads/2019/02/Sejarah-Asal-Mula-Berdirinya-Kerajaan-Demak.jpg"
+       alt="Ilustrasi Sejarah Kesultanan Demak"
+       class="rounded-xl shadow-xl max-w-md w-full h-auto transition-transform duration-300 hover:scale-105" />
+</div>
+<br>
+
+
+<!-- Paragraf 3 -->
+<div class="max-w-3xl mx-auto" data-aos="fade-right" data-aos-delay="100">
+  <p class="text-lg sm:text-xl leading-relaxed text-justify border-y border-black/30 py-6 transition-all duration-300 hover:scale-[1.01]">
+    <strong>3. Pemerintahan yang Gagal</strong>
+    <br><br>
+    Di samping konflik internal, kegagalan dalam tata kelola pemerintahan juga menjadi faktor yang mempercepat kehancuran Kerajaan Demak. Pemerintah tidak mampu meredam perbedaan pandangan antara masyarakat dan bangsawan, khususnya dalam soal mazhab keagamaan. Selain itu, perhatian yang terlalu besar pada peperangan melawan Portugis serta ketidakpedulian terhadap kesejahteraan rakyat menimbulkan ketidakpuasan luas di kalangan masyarakat. Kurangnya komunikasi antara pemerintah dan rakyat menyebabkan melemahnya legitimasi kekuasaan kerajaan.
+  </p>
+</div>
+
+<!-- Gambar Ilustrasi -->
+<div class="flex justify-center mt-6" data-aos="zoom-in" data-aos-delay="200">
+  <img src="https://ganaislamika.com/wp-content/uploads/2019/09/pajajaran-gadjah-mada-1024x682.jpg"
+       alt="Ilustrasi Sejarah Kesultanan Demak"
+       class="rounded-xl shadow-xl max-w-md w-full h-auto transition-transform duration-300 hover:scale-105" />
+</div>
+</div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <center>
+    <footer class="section-footer"><b><i>Sumber Referensi </i></b>| <a href="https://www.detik.com/jateng/budaya/d-6084921/kerajaan-demak-sejarah-raja-raja-masa-kejayaan-dan-keruntuhannya/amp"><u><i>Klik di sini</i></u> + Buku Cetak IPS Sejarah SMA/MA/SMK/MAK Kelas X Kurikulum Merdeka</a></footer>
+  </center>
+</section>
+
+
+<!-- Biografi -->
+
+  <section id="biografi" data-page="biografi" class="page-section container mx-auto px-4 py-20" data-aos="fade-right">
+  <h2 class="text-4xl font-bold text-utama mb-12 text-center tracking-wide uppercase">
+    📚 BIOGRAFI 📚
+
+
+  </h2>
+
+    <!-- Galeri Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+      <!-- Gambar 1 -->
+      <div class="bg-white rounded-lg shadow-md p-4 flex flex-col items-center space-y-3">
+        <img src="https://man3jkt.sch.id/wp-content/uploads/2021/08/WhatsApp-Image-2021-08-12-at-3.23.04-PM.jpeg" class="w-64 h-40 object-cover rounded" alt="Raden Patah">
+        <p class="text-center font-semibold text-gray-700">Raden Patah</p>
+        <button onclick="bukaModal('Raden Patah', 'Raden Patah lahir pada tahun 1455 di Palembang yang kala itu masih merupakan wilayah kekuasaan Majapahit. Ia merupakan seorang putra dari Brawijaya V yang merupakan raja terakhir Majapahit. Raden Patah juga merupakan anak dari seorang selir Tionghoa. Selir Tionghoa ini merupakan putri dari Kyai Batong atau yang dikenal juga dengan Tan Go Hwat. Hal tersebut terjadi dikarenakan Ratu Dwarawati yang merupakan merasa cemburu, akhirnya Raja Brawijaya pun terpaksa memberikan selir Tiongkok kepada adipatinya di Palembang, yaitu Arya Damar. Raden Patah diketahui memiliki istri bernama Putri Solekha, Randu Singa dan Putri Dipati Jipang. Dari pernikahannya tersebut Raden Patah memiliki anak bernama Raden Surya atau Pati Unus, Raden Trenggono, Raden Kanduruwan, Raden Kikin dan Ratu Nyawa. Ia pun menolak menggantikan Arya Damar menjadi Adipati Palembang. Sehingga Ia akhirnya kabur ke pulau Jawa dan ditemani oleh Raden Kusen. Sesampainya di Jawa, keduanya pun langsung berguru pada Sunan Ampel di Surabaya. Kemudian Raden Kusen mengabdi ke Majapahit, sedangkan Ia pindah ke Jawa Tengah dan membuka hutan Glagah Wangi menjadi sebuah pesantren. Setelah mendirikan pesantren ternyata pesantren yang didirikan olehnya pun semakin mengalami kemajuan. Hal ini pun menimbulkan kekhawatiran bagi Brawijaya alias Bhre Kertabhumi jika sewaktu waktu Raden Patah berniat untuk melakukan upaya pemberontakan. Sehingga Raden Kusen yang waktu itu telah diangkat menjadi Adipati Terung diperintah untuk memanggil Raden Patah. Raden Kusen pun akhirnya menghadapkannya ke Majapahit. Brawijaya yang diidentifikasi merupakan Brawijaya V merasa terkesan oleh hal yang dilakukan oleh pendiri kesultanan Demak ini. Sehingga ia pun akhirnya mau mengakuinya sebagai putranya. Ia pun kemudian diangkat sebagai bupati. Selanjutnya pesantren Glagahwangi yang didirikan olehnya diubah namanya menjadi Demak dengan ibu kota yang bernama Bintara. Menurut kronik Tiongkok, pendiri kerajaan Demak ini telah pindah dari Surabaya ke Demak di tahun 1475. Kemudian ia menaklukkan Semarang pada tahun 1477 sebagai bawahan Demak. Hal itu membuat Kung-ta-bu-mi atau Bhre Kertabhumi yang ada di Majapahit menjadi resah dan juga khawatir. Namun, berkat bujukan Bong Swi Hoo yang merupakan Sunan Ampel, akhirnya Kung-ta-bu-mi bersedia mengakui Jin Bun sebagai anak, dan meresmikan kedudukannya sebagai bupati di Bing-to-lo yang merupakan ejaan Tionghoa untuk Bintoro. Untuk versi perang dari Demak dan Majapahit terdapat beberapa versi. Majapahit mengalami kekalahan melawan Demak, namun Pa-bu-ta-la diampuni karena ia merupakan menantunya. Kerajaan Demak dibawah pemerintahan Raden Patah mengalami kemajuan pesat. Pemerintahannya dikenal sangat menjunjung tinggi toleransi beragama saat ia berkuasa. Raden Patah juga diketahui mendirikan Masjid Agung Demak yang menjadi salah satu masjid tertua di Indonesia. Ia juga menjadikan masjid Agung Demak jadikan sebagai pusat pemerintahan dari kerajaan Demak. Raden Patah wafat pada tanggal 1518 di Demak, Jawa Tengah dalam usia 63 tahun. Posisinya sebagai sultan demak kemudian digantikan oleh anaknya yang bernama Pati Unus. Raden Patah merupakan raja pertama Kesultanan Demak yang meninggalkan jejak sejarah kuat, dengan perjuangannya dan peninggalan budayanya yang masih digunakan hingga saat ini, yakni Masjid Demak. Oleh karena itu, ia wafat sebagai raja yang dikenang sepanjang masa.')" class="mt-2 px-4 py-1  text-blue fs-6 rounded hover:bg-blue-600 transition'" class="mt-2 px-4 py-1 text-white fs-6 rounded hover:bg-blue-600 transition flex">Baca Selengkapnya</button>
+      </div>
+
+      <style>
+        #modal-deskripsi{
+          font-size: 14px;
+        }
+        
+      </style>
+      
+
+      <!-- Gambar 2 -->
+      <div class="bg-white rounded-lg shadow-md p-4 flex flex-col items-center space-y-3">
+        <img src="https://www.laduni.id/panel/themes/default/uploads/post/laduniid-18eac2b4-994f-41df-953c-725a4341edef.jpg" class="w-64 h-40 object-cover rounded" alt="Pati Unus">
+        <p class="text-center font-semibold text-gray-700">Pati Unus</p>
+        <button onclick="bukaModal('Pati Unus', 'Pati Unus lahir pada tahun 1480. Pati Unus dalam kisah sejarah Kerajaan Demak yang populer, adalah anak menantu dari Raden Patah raja pertama Kerajaan Demak. Pati Unus memiliki beberapa nama yang populer. Selain nama Pati Unus, masih ada nama lainnya. Nama lain Pati Unus seperti Adipati Unus, Yat Sun, Pangeran Sabrang Lor dan masih ada beberapa nama lainnya. Nenek Pati Unus berasal dari Kalimantan Barat Daya. Ia kemudian merantau ke Malaka dan kawin dengan wanita Melayu. Dari perkawinan tersebut lahir ayah Pati Unus. Saat muda ayah Pati Unus dikenal sebagai pedagang sukses. Bahkan memiliki jung dan wilayah kekuasaan di Pulau Bangka dan beberapa Kalimantan. Ayah Pati Unus kemudian kembali ke Jawa dan bergabung dengan kerajaan Demak. Kemudian Pati Unus menikah dengan putri Raden Patah. Sejak saat itu Pati Unus dipercaya untuk memimpin pasukan Kesultanan Demak dalam invasi ke Malaka dan menjadi raja. Pati Unus berkuasa penuh di Kerajaan Demak dalam waktu singkat pada 1518 hingga 1521. Ia menggantikan Raden Patah, raja pertama sekaligus pendiri Kerajaan Demak yang wafat pada 1518. Nasib Pati Unus dalam penyerangan terhadap Portugis di Malaka ada beberapa versi atau laporan. Ada yang mengatakan wafat dalam pertempuran tersebut. Namun menurut Raffles, Pati Unus berhasil selamat dan pulang ke Jawa. Sang pangeran muda melawan Portugis dikenang warga di Pulau Jawa karena di usia muda dengan berani melawan Portugis yang pada masa itu dikenal sebagai bangsa yang cukup kuat dan tangguh. Pada sisi lain, kegagalan Pati Unus dalam menyerang Portugis disambut gembira oleh sebagian pihak di Jawa, khusus pihak yang punya relasi cukup baik dengan Portugis. Mereka lebih suka menjalin relasi dalam bidang perdagangan dengan Portugis dibandingkan dengan Kerajaan Demak. Pati Unus pun melancarkan ekspansi ke beberapa daerah di pantai Utara Jawa untuk menghalau meluasnya pengaruh Portugis di tanah Jawa. Pati Unus meninggal dalam usia yang sangat muda pada tahun 1521. Ia meninggal dalam misi ke Malaka untuk menghancurkan Portugis. Pati Unus gugur dalam pertempuran di medan laga dan meninggalkan putra yang bernama Raden Abdullah. Raden Abdullah ini turut ke Banten dan oleh para petinggi pasukan Pati Unus, tidak diperbolehkan kembali pulang ke Demak dengan alasan keamanan. Karena sepeninggal Pati Unus, di Demak telah terjadi perebutan kekuasaan dan semua keluarga di Demak merasa paling berhak atas tahta Kerajaan Demak. Keturunan Pati Unus dianggap tidak memiliki hak untuk menjadi Raja Demak karena Pati Unus hanya anak menantu. Selain hanya seorang menantu, Pati Unus secara patrilineal juga keturunan Arab seperti keluarga Kesultanan Banten dan Cirebon. Sedangkan raja pertama Demak Raden Patah meski masih memiliki darah Arab, namun hanya berasal dari pihak Ibu. Di pihak ayah, Raden Patah adalah anak dari Brawijaya ke V yang artinya Raden Patah adalah memiliki garis keturunan murni Jawa atau Majapahit. Gelar Pati Unus yaitu Pangeran Sabrang Lor disematkan kepadanya karena ia pernah memimpin pasukan untuk menyerang Portugis dan menyebrangi lautan utara atau Laut Jawa menuju Malaka. Pati Unus memerintah dalam waktu yang singkat. Walaupun singkat, Pati Unus tetap meninggalkan jejak dan kenangan yang besar, terutama pada masyarakat di Jawa.')" class="mt-2 px-4 py-1  text-blue fs-6 rounded hover:bg-blue-600 transition'" class="mt-2 px-4 py-1 text-white fs-6 rounded hover:bg-blue-600 transition flex">Baca Selengkapnya</button>
+      </div>
+
+      <style>
+        #modal-deskripsi{
+          font-size: 14px;
+        }
+        
+      </style>
+
+      <!-- Gambar 3 -->
+      <div class="bg-white rounded-lg shadow-md p-4 flex flex-col items-center space-y-3">
+        <img src="https://asset.kompas.com/crops/k0FMm6f8b4gnQ4RZY3fFL2vvzGY=/62x0:976x609/1200x800/data/photo/2024/06/10/6665df98b41c3.png" class="w-64 h-40 object-cover rounded" alt="Sultan Trenggono">
+       <p class="text-center font-semibold text-gray-700">Sultan Trenggono</p>
+        <button onclick="bukaModal('Sultan Trenggono', 'Sultan Trenggono lahir pada tahun 1483 M. Selain nama Trenggono ia mempunyai panggilan lain, yaitu Tung Ka Lo, Ki Mas Palembang, Pate Rodin Junior, dan Molana Trenggono. Saat remaja, Sultan Trenggono pernah menjabat sebagai jaksa dalam tata hukum Islam. Setelah menikah, ia mempunyai enam keturunan, dua putra dan empat putri. Kedua putranya ia didik dengan siasat perang, sedangkan keempat putrinya ia nikahkan dengan para putra mahkota raja. Sultan Trenggono naik takhta pada 1521, dan setelah dilantik oleh Sunan Gunung Jati gelarnya adalah Sultan Ahmad Abdul Arifin. Ia naik tahta menjadi pemimpin di Kerajaan Demak saat berusia 38 tahun menggantikan Adipati Unus. la memimpin selama 25 tahun terhitung sejak tahun 1521-1546 M. Kepemimpinan Sultan Trenggono adalah masa kejayaan Kerajaan Demak. Pencapaian Demak pada masa pemerintahan Sultan Trenggono pun sangat banyak, termasuk mengusir Portugis dari Sunda Kelapa pada 1527. Pada 1522, Fatahillah dikirim Sultan Trenggono ke Banten dalam rangka perluasan wilayah sekaligus menggagalkan upaya Portugis mendirikan benteng di Sunda Kelapa. Setelah menguasai Banten, Sunda Kelapa, dan Cirebon, usaha untuk memperluas wilayah terus dilakukan hingga Jawa Tengah bagian selatan dan Jawa Timur. Dalam usaha perluasan wilayah ke Jawa Timur, Sultan Trenggono memimpin pasukannya sendiri. Pada 1527, pasukan Demak di bawah pimpinan Sunan Kudus berhasil menaklukkan Kerajaan Majapahit. Selain itu, wilayah lain seperti Madiun, Tuban, Gresik, Surabaya, dan Malang juga berhasil dikuasai. Kekuasaan Demak saat dipimpin oleh Sultan Trenggono meliputi sebagian Jawa Barat, Jayakarta, Jawa Tengah, dan sebagian Jawa Timur. Di samping penaklukkan wilayah, Sultan Trenggono menjadikan Demak sebagai pusat penyebaran Islam di Jawa Tengah. Prestasi yang telah dicapai Sultan Trenggono adalah dapat mengislamkan hampir seluruh Pulau Jawa, memperluas daerah kekuasaan, memperluas daerah perdagangan dengan cara menaklukkan pelabuhan-pelabuhan perdagangan dan dapat mengusir bangsa Portugis dari bumi Nusantara. Sultan Trenggono tewas dalam pertempuran pada tahun 1546. Setelah meninggalnya Sultan Trenggono terjadi perang saudara antara Sunan Prawoto, raja Demak keempat, dan Pangeran Sekar Sedo Lepen. Akibat dari perjuangan Sultan Trenggono selama memimpin, Kesultanan Demak mencapai masa kejayaannya. Setelah ia wafat, Kesultanan Demak pun mengalami kemunduran.')" class="mt-2 px-4 py-1  text-blue fs-6 rounded hover:bg-blue-600 transition'" class="mt-2 px-4 py-1 text-white fs-6 rounded hover:bg-blue-600 transition flex">Baca Selengkapnya</button>
+      </div>
+
+      <style>
+        #modal-deskripsi{
+          font-size: 14px;
+        }
+        
+      </style>
+
+      <!-- Gambar 4 -->
+      <div class="bg-white rounded-lg shadow-md p-4 flex flex-col items-center space-y-3">
+        <img src="https://www.laduni.id/panel/themes/default/uploads/post/b93079f5-0aff-434d-9622-ab8044337012.jpg" class="w-64 h-40 object-cover rounded" alt="Sunan Prawoto">
+        <p class="text-center font-semibold text-gray-700">Sunan Prawoto</p>
+        <button onclick="bukaModal('Sunan Prawono', 'Sunan Prawoto lahir pada tahun 1549. Dia adalah putra sulung Sultan Trenggono, raja Demak. Sunan Prawoto juga dikenal dengan nama Raden Mukmin. Sepeninggal Adipati Unus atau Pangeran Sabrang Lor terjadi konflik perebutan kekuasaan terhadap Kerajaan Demak. Hal tersebut disebabkan karena Adipati Unus tidak memiliki keturunan untuk dapat melanjutkan kekuasaannya atas Kerajaan Demak. Sehingga kekuasaan tersebut kemudian diperebutkan oleh dua orang keturunan dari Raden Fatah yakni Raden Trenggono dan Raden Kikin. Dalam perebutan tersebut Raden Kikin merasa dirinya lebih pantas untuk memimpin Demak karena memiliki pengalaman dan usia yang lebih tua daripada Raden Trenggono. Sementara itu, Raden Trenggono merupakan putra dari permaisuri Kerajaan Demak sehingga secara peraturan kerajaan maka ia paling berhak untuk melanjutkan kekuasaan atas Demak. Melihat kondisi perebutan kekuasaan yang tidak kian mereda dan justru kian meluas membuat Sunan Prawoto mengambil tindakan dengan berpihak kepada Raden Trenggono. Sunan Prawoto mengutus seorang pembantunya bernama Ki Surayata untuk membunuh Raden Kikin. Ki Surayata berhasil membunuh Raden Kikin di sungai seusai shalat Jumat. Semenjak itu, Raden Kikin dijuluki sebagai Pangeran Sekar Seda ing Lepen. Pada Tahun 1546, Sultan Trenggono yang merupakan raja ketiga dari Kerajaan Demak meninggal dunia. Hal ini mengakibatkan kekosongan terhadap tahta Kesultanan Demak. Melihat kondisi itu Sunan Giri dan sesepuh dari Kesultanan Demak sepakat untuk mengangkat dan menjadikan putra sulung Sultan Trenggono, Sunan Prawoto sebagai sultan keempat dari Kerajaan Demak dengan gelar Sultan Syah Alam Akbar Jiem Boen-ningrat IV. Ketika itu, Sunan Prawoto tidak dapat melihat atau buta. Kebutaan yang dialami oleh Sunan Prawoto kerap kali dikaitkan dengan kutukan pamannya yang telah ia bunuh ketika terjadi perebutan kekuasaan dengan ayahnya. Pada masa pemerintahan Sunan Prawoto pusat Kerajaan Demak yang terletak di Bintoro dipindahkan menuju Bukit Prawoto. Selama menjadi raja di Kerajaan Demak, Sunan Prawoto lebih banyak aktif dalam perjuangan agama daripada urusan politik kerajaan. Dengan melihat kondisi yang demikian membuat Arya Penangsang berencana untuk melakukan pemberontakan dan merebut tahta Kerajaan Demak dari tangan Sunan Prawoto. Selain untuk memperoleh tahta Kerajaan Demak, hal itu ia lakukan untuk membalaskan dendam atas tindakan Sunan Prawoto ketika membunuh ayahnya pada tahun 1521. Putra Raden Kikin, Arya Penangsang melakukan pemberontakan dan perlawanan terhadap Sunan Prawoto. Hal ini ia lakukan setelah memperoleh dukungan dari Sunan Kudus untuk merebut kekuasaan Demak dari Sunan Prawoto. Pada tahun 1549, Arya Penangsang mengutus seorang anak buahnya bernama Rungkud dan berhasil membunuh Sunan Prawoto. Pada masa pemerintahan Sunan Prawoto, Kerajaan Demak mengalami kemunduran yang diakibatkan oleh pemberontakan dan perlawanan tersebut.')" class="mt-2 px-4 py-1  text-blue fs-6 rounded hover:bg-blue-600 transition'" class="mt-2 px-4 py-1 text-white fs-6 rounded hover:bg-blue-600 transition flex">Baca Selengkapnya</button>
+      </div>
+
+      <style>
+        #modal-deskripsi{
+          font-size: 14px;
+        }
+        
+      </style>
+    <!-- Gambar ke-5 di tengah -->
+      <div class="bg-white rounded-lg shadow-md p-4 flex flex-col items-center space-y-3">
+        <img src="https://img.inews.co.id/media/600/files/networks/2024/01/15/d13a5_jaka-tingkir.jpg" class="w-64 h-40 object-cover rounded" alt="Arya Penangsang">
+        <p class="text-center font-semibold text-gray-700">Arya Penangsang</p>
+        <button onclick="bukaModal('Arya Penangsang', 'Arya Penangsang lahir di Lasem pada tahun 1505. Ia adalah putra pertama dari Pangeran Surowiyoto atau Raden Kikin, yang juga dikenal sebagai Pangeran Sekar Seda Lepen, putra Raden Patah, raja Demak Bintoro. Arya Penangsang adalah putra satu-satunya Raden Kikin. Ketika dewasa dan menjadi seorang adipati, ia terkenal sebagai seorang yang berperawakan tinggi, besar, kekar, berwatak keras, pemberani, dan gampang tersulut emosi. Ia adalah murid kesayangan Sunan Kudus. Arya Penangsang memiliki kesaktian yang luar biasa. Ia mempunyai senjata pusaka yang ampuh berupa keris bernama Ki Brongot Setan Kober. Ia juga mempunyai seekor kuda perang jantan berwarna hitam yang tangguh bernama Gagak Rimang. Sejak terbunuhnya Raden Kikin ayahnya, Arya Penangsang menaruh dendam kesumat terhadap Sunan Prawoto dan Sultan Trenggono. Ia terpaksa menahan diri karena pada waktu itu para pinisepuh Kesultanan Demak menyetujui pengangkatan Pangeran Trenggono sebagai seorang sultan. Arya Penangsang memandang hal itu tidak sah dan tidak adil. Ia kemudian menuntut balas dan keadilan. Ia berambisi merebut tahta Demak, karena ia merasa dialah yang berhak atas tahta Demak. Semenjak pengangkatannya sebagai seorang adipati, Arya Penangsang tidak pernah mau menghadap ke Demak. Sultan Trenggono memaklumi hal itu. Sultan Trenggono telah melakukan berbagai bujukan, tetapi hati Arya Penangsang sangat sulit dilunakkan. Di tengah-tengah keberhasilan Sultan Trenggono dalam pemerintahan, Arya Penangsang masih menyimpan dendam kesumat atas kematian ayahnya. Sementara itu, ia mengetahui bahwa kelak sepeninggal Sultan Trenggono, tahta Demak akan jatuh ke tangan Sunan Prawoto, anak Sultan Trenggono. Untuk itulah ia mengutus pembunuh bayaran untuk membunuh Sunan Prawata. Namun, ternyata upaya itu gagal. Takhta Demak justru jatuh ke tangan menantu Sultan Trenggono , Mas Karebet alias Jaka Tingkir yang bergelar Sultan Hadiwijaya. Di sisi lain, Sunan Kalijaga memohon kepada Sunan Kudus agar para sepuh, wali, dan ulama menempatkan diri sebagai orang tua, serta tidak turut campur dalam perseteruan antara Arya Penangsang dan Hadiwijaya. Sultan Hadiwijaya merasa sungkan apabila harus berperang dengan kerabatnya secara langsung. Oleh karena itu, ia memutuskan untuk mengadakan sayembara. Sayembara itu mengumumkan bahwa orang yang mampu membunuh Arya Penangsang akan diberikan hadiah berupa tanah perdikan. Hadiah yang ditawarkan Sultan Hadiwijaya sangatlah besar dan menggiurkan, sehingga banyak orang turut serta untuk mengikuti sayembara itu. Tidak hanya rakyat, sayembara juga diikuti oleh saudara-saudara angkat sultan, seperti Ki Ageng Pemanahan, Ki Pejawi, dan Ki Juru Mertani. Akhirnya Arya Penangsang pun tewas karena dengan tidak sadar memotong usus sendiri dengan keris  saat sayembara karena adanya provokasi dari Ki Ageng Pemanahan pada tahun 1554.')" class="mt-2 px-4 py-1  text-blue fs-6 rounded hover:bg-blue-600 transition'" class="mt-2 px-4 py-1 text-white fs-6 rounded hover:bg-blue-600 transition flex">Baca Selengkapnya</button>
+      </div>
+
+      <style>
+        #modal-deskripsi{
+          font-size: 14px;
+        }
+        
+      </style>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <center>
+    <footer class="section-footer"><b><i>Sumber Referensi </i></b>| <a href="https://www.biografiku.com/biografi-raden-patah/"><u><i>1</i></a> <a href="https://www.detik.com/edu/detikpedia/d-6501350/mengenal-raden-patah-keturunan-raja-majapahit-pendiri-kesultanan-demak"><i>2</i></a> <a href="https://daerah.sindonews.com/read/1001283/707/biografi-pati-unus-penguasa-kesultanan-demak-berjuluk-pangeran-sabrang-lor-1674205295"><i>3</i></a> <a href="https://kumparan.com/berita-terkini/mengenal-pati-unus-pemimpin-pasukan-kerajaan-demak-yang-menyerang-portugis-1zI8RCEJzg5"><i>4</i></a> <a href="https://www.detik.com/jateng/budaya/d-6745251/biografi-sultan-trenggono-raja-demak-yang-sukses-lumpuhkan-portugis"><i>5</i></a> <a href="https://www.kompas.com/stori/read/2021/08/09/110000779/sultan-trenggono-raja-demak-yang-menaklukkan-majapahit?page=all"><i>6</i></a> <a href="https://www.detik.com/jateng/berita/d-6803696/biografi-sunan-prawoto-raja-keempat-kerajaan-demak"><i>7</i></a> <a href="https://www.detik.com/jateng/berita/d-6807183/sosok-arya-penangsang-raja-demak-yang-sakti-mandraguna-dan-penuh-dendam"><i>8</i></a> <a href="https://www.kompas.com/stori/read/2024/02/16/180000279/kisah-arya-penangsang--sang-pemberontak-demak"><i>9</i></u> + Buku Cetak IPS Sejarah SMA/MA/SMK/MAK Kelas X Kurikulum Merdeka</a></footer>
+  </center>
+  </section>
+
+  <!-- SCRIPT UNTUK MENAMPILKAN SECTION SESUAI HASH -->
+  <script>
+    function showSectionFromHash() {
+      const currentHash = window.location.hash.replace('#', '') || 'beranda';
+      document.querySelectorAll('section[data-page]').forEach(section => {
+        section.classList.toggle('hidden', section.dataset.page !== currentHash);
+      });
+    }
+
+    // Jalankan saat pertama kali halaman dibuka
+    showSectionFromHash();
+
+    // Jalankan saat hash berubah (navigasi)
+    window.addEventListener('hashchange', showSectionFromHash);
+  </script>
+</body>
+</html>
+
+
+
+  <!-- Peran -->
+<section id="peran" data-page="peran" class="page-section container mx-auto px-4 py-16 bg-white" data-aos="fade-up">
+  <h2 class="text-3xl font-bold text-center text-utama mb-10">🕌 Peran Kesultanan Demak dalam Penyebaran Islam</h2>
+
+  <!-- Intro -->
+  <div class="text-lg text-gray-700 text-center mb-12 max-w-3xl mx-auto leading-relaxed">
+    Kesultanan Demak berperan penting dalam menyebarkan ajaran Islam di Nusantara melalui dukungan politik, pendidikan, budaya, dan peran para Wali Songo. Strategi dakwah yang damai membuat Islam diterima secara luas dan harmonis.
+  </div>
+
+  <!-- Grid Interaktif -->
+  <div class="grid md:grid-cols-2 gap-8">
+
+    <!-- Kartu 1 -->
+    <div class="bg-gray-50 hover:bg-gray-100 transition p-6 rounded-xl shadow-md" data-aos="fade-up" data-aos-delay="100">
+      <h3 class="text-xl font-semibold text-utama mb-2">🌟 Peran Wali Songo</h3>
+      <p class="text-gray-700 text-sm leading-relaxed">
+        Para wali seperti Sunan Ampel, Sunan Giri, dan Sunan Kudus menjadi tokoh penting yang berdakwah sambil menjabat sebagai penasihat kerajaan, hakim, hingga panglima perang.
+      </p>
+    </div>
+
+    <!-- Kartu 2 -->
+    <div class="bg-gray-50 hover:bg-gray-100 transition p-6 rounded-xl shadow-md" data-aos="fade-up" data-aos-delay="200">
+      <h3 class="text-xl font-semibold text-utama mb-2">🎭 Strategi Dakwah</h3>
+      <p class="text-gray-700 text-sm leading-relaxed">
+        Dakwah dilakukan melalui lisan, tulisan, serta melalui seni dan budaya lokal, sehingga ajaran Islam diterima masyarakat secara damai.
+      </p>
+    </div>
+
+    <!-- Kartu 3 -->
+    <div class="bg-gray-50 hover:bg-gray-100 transition p-6 rounded-xl shadow-md" data-aos="fade-up" data-aos-delay="300">
+      <h3 class="text-xl font-semibold text-utama mb-2">🏰 Masjid Agung Demak</h3>
+      <p class="text-gray-700 text-sm leading-relaxed">
+        Masjid ini menjadi pusat kegiatan dakwah dan simbol utama kekuatan Islam di Jawa. Dibangun oleh para wali dan raja pertama, Raden Patah.
+      </p>
+    </div>
+
+    <!-- Kartu 4 -->
+    <div class="bg-gray-50 hover:bg-gray-100 transition p-6 rounded-xl shadow-md" data-aos="fade-up" data-aos-delay="400">
+      <h3 class="text-xl font-semibold text-utama mb-2">🌍 Penyebaran ke Luar Jawa</h3>
+      <p class="text-gray-700 text-sm leading-relaxed">
+        Dakwah tidak hanya dilakukan di Jawa, tetapi juga merambah hingga ke Sumatera dan Kalimantan, menjadikan Demak pusat dakwah regional.
+      </p>
+    </div>
+
+    <!-- Kartu 5 -->
+    <div class="bg-gray-50 hover:bg-gray-100 transition p-6 rounded-xl shadow-md" data-aos="fade-up" data-aos-delay="500">
+      <h3 class="text-xl font-semibold text-utama mb-2">💰 Kekuatan Politik & Ekonomi</h3>
+      <p class="text-gray-700 text-sm leading-relaxed">
+        Demak memanfaatkan kekuasaan dan kekayaan maritim untuk memperluas wilayah dan mendukung penyebaran dakwah Islam secara sistematis.
+      </p>
+    </div>
+
+    <!-- Kartu 6 -->
+    <div class="bg-gray-50 hover:bg-gray-100 transition p-6 rounded-xl shadow-md" data-aos="fade-up" data-aos-delay="600">
+      <h3 class="text-xl font-semibold text-utama mb-2">👑 Peran Sultan Trenggono</h3>
+      <p class="text-gray-700 text-sm leading-relaxed">
+        Di masa Sultan Trenggono, Demak mencapai masa kejayaan dan penyebaran Islam berlangsung lebih pesat ke wilayah timur dan pesisir utara Jawa.
+      </p>
+    </div>
+
+    <!-- Kartu 7 -->
+    <div class="bg-gray-50 hover:bg-gray-100 transition p-6 rounded-xl shadow-md" data-aos="fade-up" data-aos-delay="700">
+      <h3 class="text-xl font-semibold text-utama mb-2">🎨 Akulturasi Budaya</h3>
+      <p class="text-gray-700 text-sm leading-relaxed">
+        Wali Songo menerapkan pendekatan budaya lokal dalam dakwah, menciptakan akulturasi yang harmonis antara nilai Islam dan tradisi Jawa.
+      </p>
+    </div>
+
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <center>
+    <footer class="section-footer"><b><i>Sumber Referensi </i></b>| <a href="https://www.kompas.com/stori/read/2022/09/15/190000879/peranan-kerajaan-demak-dalam-menyebarkan-islam-di-pulau-jawa?page=all"><i><u>Klik di sini</u></i> + Buku Paket IPS Sejarah untuk SMA/MA/SMK/MAK Kelas X Kurikulum Merdeka</a></footer>
+  </center>
+</section>
+
+  
+<!-- Galeri -->
+<section id="galeri" data-page="galeri" class="page-section container mx-auto px-4 py-16 bg-gray-100" data-aos="zoom-in">
+  <h2 class="text-3xl font-semibold text-utama mb-6 text-center">🎨🎭 GALERI 🎨🎭</h2>
+
+  <div id="galeri-grid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+
+    <!-- Contoh Gambar (1 dari 6, lainnya serupa) -->
+    <div class="bg-white rounded-xl shadow-md p-3 flex flex-col items-center transition-transform duration-300 hover:shadow-lg">
+      <img src="https://awsimages.detik.net.id/community/media/visual/2023/01/09/suasana-masjid-agung-demak-senin-912023-1_169.jpeg?w=650"
+           alt="Masjid Agung Demak"
+           class="rounded-lg w-full h-48 sm:h-56 md:h-64 object-cover transition-transform duration-300 hover:scale-105">
+      <p class="mt-3 text-center text-gray-700 text-sm font-bold">🖼 Masjid Agung Demak</p>
+      <button onclick="bukaModal('Masjid Agung Demak', 'Masjid Agung Demak adalah masjid tertua di Indonesia yang dibangun oleh Raden Patah pada abad ke-15. Masjid ini merupakan simbol penyebaran Islam di Jawa dan pusat pemerintahan Kesultanan Demak. Arsitektur masjid ini sangat khas dengan atap limas dan tiang saka tatal.')" class="mt-2 px-4 py-1 bg-red-500 text-white text-sm rounded hover:bg-blue-600 transition">Lihat Detail</button>
+    </div>
+
+    <!-- Gambar 2 -->
+    <div class="bg-white rounded-xl shadow-md p-3 flex flex-col items-center transition-transform duration-300 hover:shadow-lg">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTanCvOTMwk2B8bo5Y7K9Yf-pEYwFTqGjffQg&s"
+           alt="Situs Kolam Wudhu"
+           class="rounded-lg w-full h-48 sm:h-56 md:h-64 object-cover transition-transform duration-300 hover:scale-105">
+      <p class="mt-3 text-center text-gray-700 text-sm font-bold">🖼 Situs Kolam Wudhu</p>
+      <button onclick="bukaModal('Situs Kolam Wudhu', 'Kolam ini dahulu digunakan oleh para jamaah Masjid Agung Demak untuk berwudhu sebelum melaksanakan salat. Letaknya yang berdekatan dengan masjid menjadikannya bagian penting dalam sejarah arsitektur dan kebudayaan Islam di Jawa.')" class="mt-2 px-4 py-1 bg-orange-500 text-white text-sm rounded hover:bg-blue-600 transition">Lihat Detail</button>
+    </div>
+
+    <!-- Gambar 3 -->
+    <div class="bg-white rounded-xl shadow-md p-3 flex flex-col items-center transition-transform duration-300 hover:shadow-lg">
+      <img src="https://media-cdn.tripadvisor.com/media/photo-s/06/cf/8d/36/makam-sunan-kalijaga.jpg"
+           alt="Makam Sunan Kalijaga"
+           class="rounded-lg w-full h-48 sm:h-56 md:h-64 object-cover transition-transform duration-300 hover:scale-105">
+      <p class="mt-3 text-center text-gray-700 text-sm font-bold">🖼 Makam Sunan Kalijaga</p>
+      <button onclick="bukaModal('Makam Sunan Kalijaga', 'Makam ini merupakan tempat peristirahatan terakhir dari Sunan Kalijaga, salah satu Wali Songo yang terkenal karena metode dakwahnya yang lemah lembut dan mengedepankan seni dan budaya lokal. Lokasinya ramai dikunjungi peziarah setiap tahun.')" class="mt-2 px-4 py-1 bg-yellow-500 text-white text-sm rounded hover:bg-blue-600 transition">Lihat Detail</button>
+    </div>
+
+    <!-- Gambar 4 -->
+    <div class="bg-white rounded-xl shadow-md p-3 flex flex-col items-center transition-transform duration-300 hover:shadow-lg">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfJmYxDZBiariMfkBNttTuWrJIdffgMhW5Dg&s"
+           alt="Saka Tatal dan Saka Majapahit"
+           class="rounded-lg w-full h-48 sm:h-56 md:h-64 object-cover transition-transform duration-300 hover:scale-105">
+      <p class="mt-3 text-center text-gray-700 text-sm font-bold">🖼 Saka Tatal dan Saka Majapahit</p>
+      <button onclick="bukaModal('Saka Tatal dan Saka Majapahit', 'Saka Tatal adalah tiang utama Masjid Agung Demak yang dibuat dari potongan-potongan kayu kecil yang dipersatukan. Simbol ini melambangkan persatuan dalam perbedaan dan gotong royong. Saka Majapahit adalah peninggalan budaya dari masa sebelum Demak.')" class="mt-2 px-4 py-1 bg-green-500 text-white text-sm rounded hover:bg-blue-600 transition">Lihat Detail</button>
+    </div>
+
+    <!-- Gambar 5 -->
+    <div class="bg-white rounded-xl shadow-md p-3 flex flex-col items-center transition-transform duration-300 hover:shadow-lg">
+      <img src="https://asset.kompas.com/crops/259lpHApT_2LLLFEPb29o2Bmf7w=/36x15:412x390/375x240/data/photo/2020/09/19/5f65e5ce1c072.jpg"
+           alt="Pintu Bledeg"
+           class="rounded-lg w-full h-48 sm:h-56 md:h-64 object-cover transition-transform duration-300 hover:scale-105">
+      <p class="mt-3 text-center text-gray-700 text-sm font-bold">🖼 Pintu Bledeg</p>
+      <button onclick="bukaModal('Pintu Bledeg', 'Pintu Bledeg terkenal karena ukiran artistik dan nilai historisnya. Konon pintu ini pernah tersambar petir namun tetap utuh. Pintu ini merupakan bagian dari peninggalan spiritual dan budaya masyarakat Jawa.')" class="mt-2 px-4 py-1 bg-blue-500 text-white text-sm rounded hover:bg-blue-600 transition">Lihat Detail</button>
+    </div>
+
+    <!-- Gambar 6 -->
+    <div class="bg-white rounded-xl shadow-md p-3 flex flex-col items-center transition-transform duration-300 hover:shadow-lg">
+      <img src="https://cdngnfi2.sgp1.digitaloceanspaces.com/gnfi/uploads/articles/large-menelisik-akulturasi-budaya-dalam-gaya-arsitektur-masjid-agung-demak-h2ujrBHjfy.jpg"
+           alt="Dampar Kencana"
+           class="rounded-lg w-full h-48 sm:h-56 md:h-64 object-cover transition-transform duration-300 hover:scale-105">
+      <p class="mt-3 text-center text-gray-700 text-sm font-bold">🖼 Dampar Kencana</p>
+      <button onclick="bukaModal('Dampar Kencana', 'Dampar Kencana adalah singgasana yang digunakan oleh Sultan Demak, khususnya Raden Patah, dalam pertemuan penting kerajaan. Singgasana ini menunjukkan kejayaan dan kebijaksanaan pemerintahan Kesultanan Demak.')" class="mt-2 px-4 py-1 bg-purple-500 text-white text-sm rounded hover:bg-blue-600 transition">Lihat Detail</button>
+    </div>
+
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <center>
+    <footer class="section-footer"><b><i>Sumber Referensi </i></b>| <a href="https://tjslp.demakkab.go.id/berita/6-peninggalan-kerajaan-demak"><i><u>Klik di sini</u></i> + Buku Paket IPS Sejarah untuk SMA/MA/SMK/MAK Kelas X Kurikulum Merdeka</a></footer>
+  </center>
+</section>
+
+<!-- Profil -->
+<section id="profil" data-page="profil" class="page-section container mx-auto px-4 py-16 bg-white" data-aos="fade-up">
+  <h2 class="text-3xl font-bold text-center text-utama mb-10">KENALI TIM KAMI👏🏻!!</h2>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+
+  <!--Alin-->
+  <div class="bg-white rounded-xl shadow-md p-3 flex flex-col items-center transition-transform duration-300 hover:shadow-lg">
+      <img src="alin.jpg"
+           alt="Caroline Kezia Budijanto"
+           class="rounded-lg w-full h-48 sm:h-56 md:h-64 object-cover transition-transform duration-300 hover:scale-105">
+      <p class="mt-3 text-center text-gray-700 text-sm font-bold">CAROLINE KEZIA BUDIJANTO</p>
+      <button onclick="bukaModal('ALIN', 'Caroline Kezia Budijanto, akrab dipanggil Alin. Lahir di Bandung pada tanggal 24 November 2009. Merupakan peserta didik di Talenta School Bandung sejak tahun 2021 dan sekarang menginjak jenjang SMA kelas 10.3 dengan nomor absen 02. Pengalaman saya saat membuat Web ini itu sebenarnya sangat seru, walaupun banyak tantangan seperti jarak antara sesama teman sehingga terjadi kesulitan mengerjakannya webnya. Tetapi Walaupun dapat dibilang lumayan sulit tetapi juga seru kerana saya dapat menggali lebih dalam tentang dunia CSS.')" class="mt-2 px-4 py-1 bg-red-500 text-white text-sm rounded hover:bg-blue-600 transition">Lihat Detail</button>
+    </div>
+
+    <!--Elena-->
+    <div class="bg-white rounded-xl shadow-md p-3 flex flex-col items-center transition-transform duration-300 hover:shadow-lg">
+      <img src="babiw.jpg"
+           alt="Elena Putri Christ Kalla"
+           class="rounded-lg w-full h-48 sm:h-56 md:h-64 object-cover transition-transform duration-300 hover:scale-105">
+      <p class="mt-3 text-center text-gray-700 text-sm font-bold">ELENA PUTRI CHRIST KALLA</p>
+      <button onclick="bukaModal('ELENA', 'Elena Putri Christ Kalla, akrab dipanggil Elena. Lahir di Bandung pada tanggal 10 Agustus 2009. Merupakan peserta didik di Talenta School Bandung sejak tahun 2021 dan sekarang menginjak jenjang SMA kelas 10.3 dengan nomor absen 08. Pengalamannya selama mengerjakan web ini, bisa mengetahui bahwa saya akan merasa sangat bahagia jika berhasil membuat sesuatu yang menarik di dalam web.')" class="mt-2 px-4 py-1 bg-red-500 text-white text-sm rounded hover:bg-blue-600 transition">Lihat Detail</button>
+    </div>
+
+    <!--Tanti-->
+    <div class="bg-white rounded-xl shadow-md p-3 flex flex-col items-center transition-transform duration-300 hover:shadow-lg">
+      <img src="tiw.jpg"
+           alt="Tantiana Anjanhi"
+           class="rounded-lg w-full h-48 sm:h-56 md:h-64 object-cover transition-transform duration-300 hover:scale-105">
+      <p class="mt-3 text-center text-gray-700 text-sm font-bold">TANTIANA ANJANHI</p>
+      <button onclick="bukaModal('TANTI', 'Tantiana Anjanhi, akrab dipanggil Tanti. Lahir di Bandung pada tanggal 28 Januari 2009. Merupakan peserta didik di Talenta School Bandung sejak tahun 2015 dan sekarang menginjak jenjang SMA kelas 10.3 dengan nomor absen 24.')" class="mt-2 px-4 py-1 bg-red-500 text-white text-sm rounded hover:bg-blue-600 transition">Lihat Detail</button>
+    </div>
+
+    <!--Gavin-->
+    <div class="bg-white rounded-xl shadow-md p-3 flex flex-col items-center transition-transform duration-300 hover:shadow-lg">
+      <img src="gavin.jpg"
+           alt="Gavin Alexander Linardi"
+           class="rounded-lg w-full h-48 sm:h-56 md:h-64 object-cover transition-transform duration-300 hover:scale-105">
+      <p class="mt-3 text-center text-gray-700 text-sm font-bold">GAVIN ALEXANDER LINARDI</p>
+      <button onclick="bukaModal('GAVIN', 'Gavin Alexander Linardi, akrab dipanggil Gavin. Lahir di Bandung pada tanggal 10 April 2009. Merupakan peserta didik di Talenta School Bandung sejak tahun 2021 dan sekarang menginjak jenjang SMA kelas 10.3 dengan nomor absen 12. Pengalamannya selama mengerjakan web ini bisa menambah wawasan dan sangat membantu dalam memahami materi.')" class="mt-2 px-4 py-1 bg-red-500 text-white text-sm rounded hover:bg-blue-600 transition">Lihat Detail</button>
+    </div>
+
+    <!--Alan-->
+    <div class="bg-white rounded-xl shadow-md p-3 flex flex-col items-center transition-transform duration-300 hover:shadow-lg">
+      <img src="alan.jpg"
+           alt="Kevin Alan Hazel"
+           class="rounded-lg w-full h-48 sm:h-56 md:h-64 object-cover transition-transform duration-300 hover:scale-105">
+      <p class="mt-3 text-center text-gray-700 text-sm font-bold">KEVIN ALAN HAZEL</p>
+      <button onclick="bukaModal('ALAN', 'Kevin Alan Hazel, akrab dipanggil Alan. Lahir di Jakarta pada tanggal 24 Desember 2008. Merupakan peserta didik di Talenta School Bandung sejak tahun 2021 dan sekarang menginjak jenjang SMA kelas 10.3 dengan nomor absen 15. Pengalamannya selama membuat web ini adalah seru, karena dapat mengerti bagaimana cara membuat sebuah web menggunakan HTML dan CSS.')" class="mt-2 px-4 py-1 bg-red-500 text-white text-sm rounded hover:bg-blue-600 transition">Lihat Detail</button>
+    </div>
+  </section>
+
+
+<!-- Modal -->
+<div id="modal" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden items-center justify-center">
+  <div class="bg-white rounded-xl shadow-lg p-6 max-w-5xl w-full relative">
+    <button onclick="tutupModal()" class="absolute top-2 right-2 text-gray-500 hover:text-red-600 text-2xl font-bold">&times;</button>
+    <h3 id="modal-judul" class="text-xl font-bold text-gray-800 mb-2"></h3>
+    <p id="modal-deskripsi" class="text-gray-700 leading-relaxed text-sm"></p>
+  </div>
+</div>
+
+<!-- Script -->
+<script>
+  function bukaModal(judul, deskripsi) {
+    document.getElementById('modal-judul').innerText = judul;
+    document.getElementById('modal-deskripsi').innerText = deskripsi;
+    document.getElementById('modal').classList.remove('hidden');
+    document.getElementById('modal').classList.add('flex');
+  }
+
+  function tutupModal() {
+    document.getElementById('modal').classList.add('hidden');
+    document.getElementById('modal').classList.remove('flex');
+  }
+</script>
+  
+
+  <!-- Footer -->
+  <footer class="bg-gradient-to-r from-[#355C7D] to-[#F67280] text-white text-center p-4 mt-8">
+    <p>&copy; 2025 <span class="text-aksen">Kesultanan Demak | Proyek Kolaborasi Akhir Tahun Ajaran 2024-2025</span></p>
+  </footer>
+
+  <!-- Scroll to Top -->
+  <button id="scrollTop" title="Kembali ke Atas" class="fixed bottom-6 right-6 bg-gradient-to-tr from-[#F564A9] to-[#FFD700] text-white p-3 rounded-full shadow-lg hover:brightness-110 hidden transition">
+    ↑
+  </button>
+
+  <!-- AOS & Scripts -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      once: false,
+      duration: 800
+    });
+  </script>
+
+
+  <!-- Typing Effect -->
+  <script>
+    const teks = ["Selamat Datang", "Menelusuri Sejarah Kesultanan Demak", "Warisan Islam Pertama di Jawa"];
+    let i = 0, j = 0, isDeleting = false;
+    const el = document.getElementById("typing");
+
+    function ketik() {
+      const kata = teks[i];
+      el.innerText = kata.substring(0, j);
+
+      if (!isDeleting && j < kata.length) {
+        j++;
+      } else if (isDeleting && j > 0) {
+        j--;
+      } else if (!isDeleting && j === kata.length) {
+        isDeleting = true;
+        setTimeout(ketik, 1500);
+        return;
+      } else {
+        isDeleting = false;
+        i = (i + 1) % teks.length;
+      }
+
+
+      setTimeout(ketik, isDeleting ? 50 : 100);
+    }
+
+    ketik();
+  </script>
+
+  <!-- Galeri JSON -->
+  <script>
+    fetch("galeri.json")
+      .then(response => response.json())
+      .then(data => {
+        const container = document.getElementById("galeri-grid");
+        data.forEach(item => {
+          const imgBox = document.createElement("div");
+          imgBox.className = "relative group overflow-hidden rounded shadow-md hover:shadow-xl transition-shadow duration-300";
+          imgBox.setAttribute("data-aos", "zoom-in");
+
+          const img = document.createElement("img");
+          img.src = item.url;
+          img.alt = item.caption;
+          img.className = "w-full h-auto transform transition-transform duration-300 group-hover:scale-110";
+
+          const overlay = document.createElement("div");
+          overlay.className = "absolute inset-0 bg-black bg-opacity-40 text-white opacity-0 group-hover:opacity-100 flex items-center justify-center transition duration-300 text-center px-2 text-sm";
+          overlay.textContent = item.caption;
+
+          imgBox.appendChild(img);
+          imgBox.appendChild(overlay);
+          container.appendChild(imgBox);
+        });
+      })
+      .catch(err => console.error("Gagal memuat galeri:", err));
+  </script>
+
+  <!-- Scroll to Top Logic -->
+  <script>
+    const btn = document.getElementById("scrollTop");
+    window.onscroll = () => {
+      if (document.documentElement.scrollTop > 300) {
+        btn.style.display = "block";
+      } else {
+        btn.style.display = "none";
+      }
+    };
+    btn.onclick = () => window.scrollTo({ top: 0, behavior: "smooth" });
+  </script>
+
+
+
+
+  <!-- Navigasi Halaman SPA -->
+<script>
+  const navLinks = document.querySelectorAll(".nav-link");
+  const sections = document.querySelectorAll(".page-section");
+
+  navLinks.forEach(link => {
+    link.addEventListener("click", (e) => {
+      e.preventDefault();
+      const targetId = link.getAttribute("href").substring(1); // hilangkan '#'
+      
+      // Tambahkan efek scroll smooth
+      document.getElementById(targetId).scrollIntoView({ behavior: "smooth" });
+
+      // Tampilkan hanya section yang sesuai
+      sections.forEach(sec => {
+        if (sec.getAttribute("data-page") === targetId) {
+          sec.classList.add("active");
+        } else {
+          sec.classList.remove("active");
+        }
+      });
+
+      // Update URL hash tanpa reload
+      history.replaceState(null, "", `#${targetId}`);
+    });
+  });
+
+  // Tampilkan section sesuai URL saat reload halaman
+  window.addEventListener("DOMContentLoaded", () => {
+    const hash = window.location.hash.substring(1);
+    if (hash) {
+      const targetSection = document.querySelector(`[data-page="${hash}"]`);
+      if (targetSection) {
+        sections.forEach(sec => sec.classList.remove("active"));
+        targetSection.classList.add("active");
+        targetSection.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  });
+</script>
+
+
+
+</body>
+</html>
+
+
